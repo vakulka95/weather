@@ -4,8 +4,6 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
 
         const userStore = useUserStore()
 
-
-
         const {
             getCityTemperature,
             getWeeklyCityTemperature,

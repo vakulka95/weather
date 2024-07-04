@@ -20,10 +20,6 @@ function clearStatus(){
   }, 3500)
 }
 
-const test = computed(() => {
-  return isLoader.value
-})
-
 /**
  * TODO: Замінюю статус для показу підказки
  */
@@ -42,7 +38,6 @@ watch(
   <main>
     <div class="container">
       <div class="content">
-        {{test}}
         <Transition name="fade">
           <prompt-component
               v-if="promptStatus"
